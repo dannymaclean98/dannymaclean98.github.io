@@ -5,7 +5,7 @@
 app.controller('blogController', function($scope, $log, $http) {
 
     $scope.page = new Page('blog', {
-        url: "https://api.github.com/repos/ferrerluis/blog/contents",
+        url: "https://api.github.com/repos/dannymaclean98/blog/contents",
         itemName: 'post'
     });
 

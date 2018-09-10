@@ -5,7 +5,7 @@
 app.controller('codingController', function($scope, $http, $log) {
 
     $scope.page = new Page('coding', {
-        url: 'https://github.com/dannymaclean98',
+        url: 'https://api.github.com/users/dannymaclean98/repos',
         itemName: 'project'
     });
 
