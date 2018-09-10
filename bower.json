@@ -1,12 +1,12 @@
 {
-  "name": "ferrerluis",
+  "name": "dannymaclean",
   "description": "",
   "main": "",
   "authors": [
-    "luis <ferrerluis97@gmail.com>"
+    "danny <dannymaclean98@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://ferrerluis.github.io/ferrerluis",
+  "homepage": "https://dannymaclean98.github.io",
   "private": true,
   "ignore": [
     "**/.*",

@@ -1,5 +1,5 @@
 /**
- * Created by luis on 7/14/16.
+ * Created by danny on 7/14/16.
  */
 
 String.prototype.capitalize = function() {

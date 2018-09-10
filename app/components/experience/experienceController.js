@@ -1,5 +1,5 @@
 /**
- * Created by luis on 7/6/16.
+ * Created by danny on 7/6/16.
  */
 
 app.controller('experienceController', function($scope, $http, $log) {
