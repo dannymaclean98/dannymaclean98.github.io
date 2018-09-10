@@ -1,0 +1,217 @@
+///////// SCREEN SIZES /////////
+
+$bigger-screen: 1500px;
+$medium-screen: 950px;
+$small-screen: 800px;
+$smaller-screen: 375px;
+
+///////// COLORS /////////
+
+$button-text-color: #FFFFFF;
+$coding-button-bg: #D85750;
+$experience-button-bg: #6FB4E8;
+$blog-button-bg: #FCB935;
+
+$button-text-color-active: #202020;
+$button-bg-active: #FFFFFF;
+
+///////// SIZES /////////
+
+$nav-button-width: 3rem;
+
+$bigger-nav-logo-width: 14rem;
+$bigger-nav-button-width: 12rem;
+
+$small-template-title-size: 3rem;
+$small-app-container-padding: 2rem;
+
+$small-footer-padding: ($small-app-container-padding * 2) 0 $small-app-container-padding 0;
+$small-footer-padding-top: $small-app-container-padding;
+
+///////// BIGGER SCREENS /////////
+
+@media screen and (min-width: $bigger-screen) {
+
+  nav {
+    .logo {
+      text-align: center;
+      width: $bigger-nav-logo-width;
+    }
+
+    .options .button {
+      width: $bigger-nav-button-width;
+    }
+  }
+}
+
+///////// BIG SCREENS /////////
+
+nav {
+
+  .logo.mobile {
+    display: none;
+  }
+
+  .options .button {
+    .big-option {
+      display: inline-block;
+    }
+    .small-option {
+      display: none;
+    }
+  }
+}
+
+///////// SMALLER SCREENS /////////
+
+@media screen and (max-width: $medium-screen) {
+
+  nav {
+    .logo {
+      display: none;
+    }
+    .logo.mobile {
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+
+  .app-container {
+
+    padding: $small-app-container-padding;
+
+    footer {
+      padding-top: $small-footer-padding-top;
+    }
+  }
+
+  nav {
+    .options .button {
+
+      width: 3rem;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .options .button {
+      .big-option {
+        display: none;
+      }
+      .small-option {
+        display: inline-block;
+
+        &.bold {
+
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  .logo {
+    &.title {
+      font-size: 2.5rem;
+      padding: 0.20rem 0.5rem 0.0335rem 0.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .main {
+    font-size: 3em;
+  }
+
+  .pages {
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    .button {
+
+      margin: 0.5rem 0;
+      color: $button-text-color;
+      padding: 0.25rem 0.5rem;
+
+      &.coding {
+        background-color: $coding-button-bg;
+      }
+      &.experience {
+        background-color: $experience-button-bg;
+      }
+      &.blog {
+        background-color: $blog-button-bg;
+      }
+
+      &:hover {
+
+        background-color: $button-bg-active;
+        color: $button-text-color-active;
+      }
+    }
+  }
+
+  .social {
+    .button {
+      margin-right: 1rem;
+    }
+  }
+
+  .container {
+    .title {
+      font-size: $small-template-title-size;
+    }
+    .items-wrapper {
+      padding-bottom: 0;
+    }
+  }
+
+  .full-height {
+    footer:last-child {
+      padding: $small-footer-padding;
+    }
+  }
+}
+
+///////// 4 INCH PHONES /////////
+
+@media screen and (max-width: $smaller-screen) {
+
+  .logo {
+    &.title {
+
+      font-size: 2rem;
+    }
+  }
+
+  nav {
+    font-size: 1.2rem;
+
+    .options {
+      .button {
+
+        margin-right: 0.5rem;
+        padding: 0.5rem 0rem;
+      }
+    }
+  }
+
+  .pages {
+    .button {
+      font-size: 1.75rem;
+    }
+  }
+
+  .container {
+    & > .title {
+
+      font-size: 3rem;
+    }
+  }
+
+  .social {
+    .button {
+      margin-right: 1rem;
+      font-size: 2rem;
+    }
+  }
+}

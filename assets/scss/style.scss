@@ -1,0 +1,468 @@
+///////// COLORS /////////
+
+$body-background-color: #202020;
+$logo-color: #FFFFFF;
+$logo-color-active: #AAAAAA;
+
+$title-color: #FFFFFF;
+$items-wrapper-bg: #EEEEEE;
+$items-text-color: #FFFFFF;
+
+$nav-text-color: #202020;
+$nav-text-color-active: #FFFFFF;
+$nav-options-bg: #FFFFFF;
+
+$coding-color: #D85750;
+$coding-color-active: #C64E4B;
+$experience-color: #6FB4E8;
+$experience-color-active: #67ABDE;
+$blog-color: #FCB935;
+$blog-color-active: #F7AE28;
+
+$button-bg: #FFFFFF;
+$coding-button-bg: $coding-color;
+$experience-button-bg: $experience-color;
+$blog-button-bg: $blog-color;
+
+$social-button-bg: #FFFFFF;
+$social-button: #AAAAAA;
+$github-color: #161415;
+$linkedin-color: #2C7AB3;
+$instagram-color: #BC2A8D;
+$email-color: #FFFFFF;
+
+///////// SIZES /////////
+
+$body-height: 100%;
+
+$app-padding: 3rem;
+$app-height: 100%;
+
+$nav-button-width: 12rem;
+
+$view-height: 100%;
+
+$button-separation: 1rem;
+$button-internal-padding: 0.5rem 1rem;
+
+$items-wrapper-margin: 6rem -3rem 0 -3rem;
+$items-wrapper-padding-bottom: 4rem;
+$item-padding: 1.5rem;
+
+$item-link-icon-size: 1.7rem;
+
+$footer-padding: ($app-padding * 2) 0 $app-padding 0;
+
+///////// FONTS /////////
+
+$background-text-color: #FFFFFF;
+
+$text-font: "Quicksand";
+$title-font: "Moon";
+
+$template-title-size: 4rem;
+
+$item-title-font: $title-font;
+$item-title-font-size: 1.3rem;
+$item-title-weight: bold;
+
+$item-language-font-size: $item-title-font-size - 0.2rem;
+
+$underline-width: 2px;
+
+///////// TRANSITIONS /////////
+
+$transition-time: 0.3s;
+
+///////// SETUP /////////
+
+html, body {
+  background-color: $body-background-color;
+  height: $body-height;
+  font-family: $text-font;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  font-weight: normal;
+}
+
+.full-height {
+  height: 100%;
+  footer:last-child {
+    padding: $footer-padding;
+  }
+}
+
+.app-container {
+
+  padding: $app-padding;
+  box-sizing: border-box;
+}
+
+#view {
+
+  height: $view-height;
+}
+
+.container {
+
+  box-sizing: border-box;
+
+  &.center {
+    justify-content: center;
+    text-align: center;
+  }
+
+  &.vertically-center {
+    height: 100%;
+    align-items: center;
+  }
+}
+
+.main {
+
+  display: inline-block;
+}
+
+///////// NAVBAR /////////
+
+nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  font-size: 1.5rem;
+
+  .hidden {
+
+    display: none;
+  }
+
+  .options {
+
+    display: flex;
+    align-items: stretch;
+
+    .button {
+      background-color: $nav-options-bg;
+      padding: $button-internal-padding;
+      margin-right: $button-separation;
+      text-align: center;
+
+      width: $nav-button-width;
+
+      &.active {
+        color: $nav-text-color-active;
+
+        &.coding {
+          background-color: $coding-button-bg;
+        }
+        &.experience {
+          background-color: $experience-button-bg;
+        }
+        &.blog {
+          background-color: $blog-button-bg;
+        }
+      }
+    }
+
+    .button:last-child {
+
+      margin-right: 0;
+    }
+  }
+}
+
+///////// LOGO /////////
+
+.logo {
+
+  display: inline-block;
+  color: $logo-color;
+  border: 0.2rem solid #FFF;
+  padding: 0.3rem 1rem 0.15rem 1rem;
+  margin: 0;
+
+  font-family: $title-font;
+  font-weight: lighter;
+
+  -webkit-transition: all 0.2s ease;
+  transition: all $transition-time ease;
+
+  &:hover {
+
+    color: $logo-color-active;
+    border-color: $logo-color-active;
+  }
+
+  &.title {
+
+    margin-bottom: 3rem;
+    padding: 0.3rem 3rem;
+
+    font-size: 5rem;
+  }
+}
+
+///////// HOME PAGES BUTTONS /////////
+
+.pages {
+  display: flex;
+  margin-bottom: 4rem;
+
+  .button {
+
+    display: inline-block;
+
+    font-size: 2rem;
+
+    flex-grow: 1;
+    flex-basis: 20%;
+    padding: 0.5rem 1rem;
+    margin-right: 1.5rem;
+  }
+
+  .button:last-child {
+
+    margin-right: 0;
+  }
+}
+
+///////// SOCIAL BUTTONS /////////
+
+.social {
+
+  display: flex;
+
+  .button {
+
+    font-size: 2.5rem;
+    color: $social-button;
+    background-color: transparent;
+
+    flex-grow: 1;
+    margin-right: 2rem;
+
+    &.github:hover {
+
+      color: $github-color;
+    }
+
+    &.linkedin:hover {
+
+      color: $linkedin-color;
+    }
+
+    &.instagram:hover {
+
+      color: $instagram-color;
+    }
+
+    &.email:hover {
+
+      color: $email-color;
+    }
+  }
+
+  .button:last-child {
+
+    margin-right: 0;
+  }
+}
+
+
+///////// TEMPLATE /////////
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  &>.title {
+    text-transform: uppercase;
+    font-size: $template-title-size;
+    width: 100%;
+
+    color: $title-color;
+
+    margin-top: 3rem;
+  }
+}
+
+.items-wrapper {
+
+  background-color: $items-wrapper-bg;
+  min-width: 100vw;
+  min-height: 60vh;
+
+  margin: $items-wrapper-margin;
+  padding-bottom: $items-wrapper-padding-bottom;
+}
+
+.items {
+  display: inline-block;
+  width: 100vw;
+  max-width: 40rem;
+  box-sizing: border-box;
+
+  margin-top: -5rem;
+
+  text-align: left;
+  color: $items-text-color;
+
+  .item {
+    padding: $item-padding;
+
+    a {
+      text-decoration: none;
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+
+      &-details {
+        &>* {
+          display: inline-block;
+          margin: 0;
+          margin-right: 0.5rem;
+        }
+        &-title {
+          font-size: $item-title-font-size;
+          font-family: $title-font;
+          font-weight: $item-title-weight;
+          color: $title-color;
+        }
+        &-language {
+          font-size: $item-language-font-size;
+          color: $items-text-color;
+        }
+        &-link {
+          color: $body-background-color;
+          font-size: $item-link-icon-size;
+          transition: all $transition-time ease;
+          &:hover {
+            color: $items-text-color;
+          }
+        }
+        &-dates {
+          display: block;
+          font-size: $item-language-font-size;
+          color: $items-text-color;
+        }
+        &-company {
+          font-size: $item-title-font-size;
+          color: $items-text-color;
+          margin: 0;
+          border-bottom: $underline-width solid rgba(0, 0, 0, 0);
+          transition: all $transition-time ease;
+          &:hover {
+            border-bottom: $underline-width solid $items-text-color;
+          }
+        }
+      }
+    }
+    &-description {
+
+      margin: 0;
+    }
+  }
+
+  .empty {
+    padding: $item-padding;
+    text-align: center;
+  }
+}
+
+///////// COLOR CLASSES /////////
+
+.color {
+  &-coding {
+    color: $coding-color;
+    &-bg {
+      background-color: $coding-color;
+      .item:nth-child(even) {
+        background-color: $coding-color-active;
+      }
+    }
+    &.active {
+      color: $coding-color-active;
+      &-bg {
+        background-color: $coding-color-active;
+      }
+    }
+  }
+  &-experience {
+    color: $experience-color;
+    &-bg {
+      background-color: $experience-color;
+      .item:nth-child(even) {
+        background-color: $experience-color-active;
+      }
+    }
+    &.active {
+      color: $experience-color-active;
+      &-bg {
+        background-color: $experience-color-active;
+      }
+    }
+  }
+  &-blog {
+    color: $blog-color;
+    &-bg {
+      background-color: $blog-color;
+      .item:nth-child(even) {
+        background-color: $blog-color-active;
+      }
+    }
+    &.active {
+      color: $blog-color-active;
+      &-bg {
+        background-color: $blog-color-active;
+      }
+    }
+  }
+}
+
+///////// BUTTONS /////////
+
+.button {
+
+  box-sizing: border-box;
+
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: $button-bg;
+  color: $nav-text-color;
+
+  &:hover {
+    color: $nav-text-color-active;
+
+    &.coding {
+      background-color: $coding-button-bg;
+    }
+    &.experience {
+      background-color: $experience-button-bg;
+    }
+    &.blog {
+      background-color: $blog-button-bg;
+    }
+  }
+}
+
+///////// FOOTER /////////
+
+footer {
+  //display: inline-block;
+  text-align: center;
+  padding-top: 3rem;
+
+  background-color: $body-background-color;
+  color: $background-text-color;
+}

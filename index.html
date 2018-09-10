@@ -1,1 +1,71 @@
-Hello, my name is Danny Malcean. This is currently under construction. Please come back later, I promise there will be something beautiful here in due time
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FerrerLuis</title>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <script src="https://use.fortawesome.com/35f11794.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
+
+    <script src="assets/js/polyfill.js"></script>
+    <script src="assets/js/classes.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+    <script src="app/components/home/homeController.js"></script>
+    <script src="app/components/coding/codingController.js"></script>
+    <script src="app/components/experience/experienceController.js"></script>
+    <script src="app/components/blog/blogController.js"></script>
+
+</head>
+<body ng-app="app">
+
+    <div class="app-container" ng-class="shared.fullHeightAt(['/home'])" ng-controller="appController">
+
+        <nav ng-hide="shared.isHome()">
+            <a href="#/home">
+                <h3 class="logo">Luis Ferrer</h3>
+                <h3 class="logo mobile">LF</h3>
+            </a>
+            <div class="options">
+                <a href="#/coding" ng-class="shared.buttonActive('coding')" class="button coding">
+                    <span class="big-option">Coding</span>
+                    <i class="bold small-option fa fa-code"></i>
+                </a>
+                <a href="#/experience" ng-class="shared.buttonActive('experience')" class="button experience">
+                    <span class="big-option">Experience</span>
+                    <i class="small-option fa fa-briefcase"></i>
+                </a>
+                <a href="#/blog" ng-class="shared.buttonActive('blog')" class="button blog">
+                    <span class="big-option">Blog</span>
+                    <i class="small-option fa fa-quote-left"></i>
+                </a>
+            </div>
+        </nav>
+
+        <div ng-view id="view"></div>
+
+        <footer>
+            Copyright © {{ shared.year }} Luis Ferrer Labarca
+        </footer>
+
+    </div>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-81286773-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

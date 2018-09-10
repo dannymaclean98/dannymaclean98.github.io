@@ -1,0 +1,15 @@
+<div class="container center">
+
+    <h1 class="title">{{page.title}}</h1>
+
+    <div class="items-wrapper">
+        <div class="items" ng-class="page.bgColor">
+            <div class="item" ng-repeat="item in page.items">
+                <div ng-include src="'app/shared/templates/' + page.options.itemName + '.html'"></div>
+            </div>
+            <div class="empty" ng-show="page.items.empty()">
+                <p>No {{page.options.itemName}}s have been uploaded yet.</p>
+            </div>
+        </div>
+    </div>
+</div>

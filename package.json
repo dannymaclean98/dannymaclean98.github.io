@@ -1,0 +1,15 @@
+{
+  "name": "ferrerluis",
+  "version": "1.0.0",
+  "scripts": {},
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "async": "~2.0.0-rc.6",
+    "async-each-series": "~1.1.0",
+    "connect-history-api-fallback": "~1.2.0"
+  }
+}
