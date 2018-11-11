@@ -1,31 +1,38 @@
 [
     {
-      "title":"Software Engineering Intern",
-      "company":"Metaswitch Networks",
-      "dates":"May 2018 – August", 
+      "title":"Personal Portfolio Website",
+      "company":"Personal Project",
+      "dates":"September 2018", 
+      "description":"Personal Website hosted on github, URL: dannymaclean.com. Built on AngularJS framework.",
+      "website":"http://dannymaclean.com/#/home"
+    },
+    {
+      "title":"MetaGo",
+      "company":"2018 Metaswitch Hackathon",
+      "dates":"August 2018",
+      "description":"Created a web application to simplify the item checkout process in the company cafeteria. Using an Angularjs front end, faces would be captured when an employee stood in front of the camera and then identified using a python backend. Items could then be identified and charged to a user’s account kept in a PostgreSQL database.",
+      "website":"https://github.com/dannymaclean98/MetaGo"
+    },
+    {
+      "title":"AccessionVQT",
+      "company":"Metaswitch Intern Project",
+      "dates":"Summer 2018",
       "description":"Developed a testing solution for VoIP quality analysis for Accession Mobile, a Metaswitch hosted PBX VoIP communication solution. The solution is being used to prevent regressions in voice quality for future software releases and to deduce areas to improve quality. Conducted signal analysis to determine perceptive audio quality and developed a GUI front end using Python.",
-      "website":"https://www.metaswitch.com/"
+      "website":"https://github.com/dannymaclean98/AccessionVQT"
     },
     {
-      "title":"Electrical Engineering Tutor",
-      "company":"University of Texas",
-      "dates":"January 2018 – Aug 2017",
-      "description":"Tutor for EE411, Circuit Theory, and EE 313, Signal Processing",
-      "website":"https://www.utexas.edu/"
+      "title":"The Lone Shooter",
+      "company":"University of Texas at Austin Video Game Design Competition Honarblae Mention",
+      "dates":"Fall 2017",
+      "description":"Developed the software and hardware for a handheld video game. Employing C++ and Assembly, the application interfaced directly with hardware using drivers also written for the project. This included ADC logic for joystick movement, DAC for sound and sprite movement on an LCD screen.",
+      "website":"https://github.com/dannymaclean98/TheLoneShooter"
     },
     {
-      "title":"Community Intern",
-      "company":"Cardinal Group Management",
-      "dates":"August 2016 – August 2017",
-      "description":"Addressed various needs of residents at University Towers such as processing work order requests. Bash and Python scripting for automatizing customer-service-related processes.",
-      "website":"https://www.universitytowers.com/"
-    },
-    {
-      "title":"Student - B.S. Electrical and Computer Engineering",
-      "company":"University of Texas at Austin",
-      "dates":"Aug 2016 – May 2020",
-      "description":"4 year student in the University of Texas, Cockrell School of Engineering studying Electrical Engineering with a technical focus on Embedded Systems",
-      "website":"https://www.utexas.edu/"
+      "title":"CountDown Solver",
+      "company":"Python Learning Excercise",
+      "dates":"Summer 2018",
+      "description":"Automatic solver for the British Game Solver using an optimized DFS search.",
+      "website":"https://github.com/dannymaclean98/CountDown"
     }
   ]
   
