@@ -5,7 +5,7 @@
 app.controller('codingController', function($scope, $http, $log) {
 
     $scope.page = new Page('coding', {
-        itemName: 'positiion',
+        itemName: 'position',
         url: 'assets/data/coding.json'
         
     });
