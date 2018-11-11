@@ -1,0 +1,31 @@
+[
+    {
+      "title":"Software Engineering Intern",
+      "company":"Metaswitch Networks",
+      "dates":"May 2018 – August", 
+      "description":"Developed a testing solution for VoIP quality analysis for Accession Mobile, a Metaswitch hosted PBX VoIP communication solution. The solution is being used to prevent regressions in voice quality for future software releases and to deduce areas to improve quality. Conducted signal analysis to determine perceptive audio quality and developed a GUI front end using Python.",
+      "website":"https://www.metaswitch.com/"
+    },
+    {
+      "title":"Electrical Engineering Tutor",
+      "company":"University of Texas",
+      "dates":"January 2018 – Aug 2017",
+      "description":"Tutor for EE411, Circuit Theory, and EE 313, Signal Processing",
+      "website":"https://www.utexas.edu/"
+    },
+    {
+      "title":"Community Intern",
+      "company":"Cardinal Group Management",
+      "dates":"August 2016 – August 2017",
+      "description":"Addressed various needs of residents at University Towers such as processing work order requests. Bash and Python scripting for automatizing customer-service-related processes.",
+      "website":"https://www.universitytowers.com/"
+    },
+    {
+      "title":"Student - B.S. Electrical and Computer Engineering",
+      "company":"University of Texas at Austin",
+      "dates":"Aug 2016 – May 2020",
+      "description":"4 year student in the University of Texas, Cockrell School of Engineering studying Electrical Engineering with a technical focus on Embedded Systems",
+      "website":"https://www.utexas.edu/"
+    }
+  ]
+  

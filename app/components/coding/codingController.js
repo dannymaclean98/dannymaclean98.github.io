@@ -5,16 +5,12 @@
 app.controller('codingController', function($scope, $http, $log) {
 
     $scope.page = new Page('coding', {
-        url: 'https://api.github.com/users/dannymaclean98/repos',
+        url: 'assets/data/coding.json',
         itemName: 'project'
     });
 
-    var ignored_repos = ["Blog", "Oh my zsh", "Awesome options", "Originpy", "PantherBot"];
 
-    Project.all($http, $scope.page, function (projects) {
-        $scope.page.items = projects.exclude(function (value) {
-            return ignored_repos.contains(value.title);
-        });
+    Position.all($http, $scope.page, function (positions) {
+        $scope.page.items = positions;
     });
-
 });
