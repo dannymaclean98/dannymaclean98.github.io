@@ -9,8 +9,6 @@ app.controller('codingController', function($scope, $http, $log) {
         url: 'assets/data/coding.json'
         
     });
-
-
     Position.all($http, $scope.page, function (positions) {
         $scope.page.items = positions;
     });
