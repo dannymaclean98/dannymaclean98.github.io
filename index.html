@@ -26,16 +26,17 @@
 <body ng-app="app">
 
     <div class="app-container" ng-class="shared.fullHeightAt(['/home'])" ng-controller="appController" id="container">
-        <script src="assets/vanta/vendor/p5.min.js"></script>
-        <script src="assets/vanta/dist/vanta.topology.min.js"></script>
-        <script>
-        VANTA.TOPOLOGY({
-            el: "#container",
-            color: 0x555de8,
-            backgroundColor: 0xf1d3e
-        })
-        </script>
         <nav ng-hide="shared.isHome()">
+                <script src="assets/vanta/vendor/p5.min.js"></script>
+                <script src="assets/vanta/dist/vanta.topology.min.js"></script>
+                <script>
+                VANTA.TOPOLOGY({
+                    el: "#container",
+                    color: 0x555de8,
+                    backgroundColor: 0xf1d3e
+                })
+                </script>
+        
             <a href="#/home">
                 <h3 class="logo">Danny Maclean</h3>
                 <h3 class="logo mobile">DM</h3>
