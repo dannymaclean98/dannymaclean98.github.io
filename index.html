@@ -26,21 +26,20 @@
 <body ng-app="app">
 
     <div class="app-container" ng-class="shared.fullHeightAt(['/home'])" ng-controller="appController" id="container">
-        <div class="overlay" id="overanimations">
-            <script src="assets/vanta/vendor/three.r92.min.js"></script>
-            <script src="assets/vanta/dist/vanta.net.min.js"></script>
-            <script>
-            VANTA.NET({
-                el: "#overanimations",
-                color: 0x7361c5,
-                backgroundColor: 0x17153c,
-                points: 18.00,
-                maxDistance: 29.00,
-                spacing: 20.00,
-                showDots: false
-            })
-            </script>
-        </div>
+        <script src="assets/vanta/vendor/three.r92.min.js"></script>
+        <script src="assets/vanta/dist/vanta.birds.min.js"></script>
+        <script>
+        VANTA.BIRDS({
+          el: "#container",
+          wingSpan: 40.00,
+          speedLimit: 3.00,
+          separation: 97.00,
+          alignment: 100.00,
+          cohesion: 32.00,
+          quantity: 3.00,
+          backgroundAlpha: 0.00
+        })
+        </script>
         <nav ng-hide="shared.isHome()">
                     
             <a href="#/home">
