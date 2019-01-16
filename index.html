@@ -26,19 +26,21 @@
 <body ng-app="app">
 
     <div class="app-container" ng-class="shared.fullHeightAt(['/home'])" ng-controller="appController" id="container">
-        <script src="assets/vanta/vendor/three.r92.min.js"></script>
-        <script src="assets/vanta/dist/vanta.net.min.js"></script>
-        <script>
-        VANTA.NET({
-            el: "#container",
-            color: 0x7361c5,
-            backgroundColor: 0x17153c,
-            points: 18.00,
-            maxDistance: 29.00,
-            spacing: 20.00,
-            showDots: false
-        })
-        </script>
+        <div class="overlay" id="overanimations">
+            <script src="assets/vanta/vendor/three.r92.min.js"></script>
+            <script src="assets/vanta/dist/vanta.net.min.js"></script>
+            <script>
+            VANTA.NET({
+                el: "#overanimations",
+                color: 0x7361c5,
+                backgroundColor: 0x17153c,
+                points: 18.00,
+                maxDistance: 29.00,
+                spacing: 20.00,
+                showDots: false
+            })
+            </script>
+        </div>
         <nav ng-hide="shared.isHome()">
                     
             <a href="#/home">
