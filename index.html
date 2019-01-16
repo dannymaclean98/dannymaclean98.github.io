@@ -26,27 +26,21 @@
 <body ng-app="app">
 
     <div class="app-container" ng-class="shared.fullHeightAt(['/home'])" ng-controller="appController" id="container">
-        
+        <script src="assets/vanta/vendor/p5.min.js"></script>
+        <script src="assets/vanta/dist/vanta.trunk.min.js"></script>
+        <script>
+        VANTA.TRUNK({
+            el: "#container",
+            color: 0x456798,
+            backgroundColor: 0x153555
+        })
+        </script>
         <nav ng-hide="shared.isHome()">
             <a href="#/home">
                 <h3 class="logo">Danny Maclean</h3>
                 <h3 class="logo mobile">DM</h3>
             </a>
-            <script src="assets/vanta/vendor/three.r92.min.js"></script>
-        <script src="assets/vanta/dist/vanta.birds.min.js"></script>
-        <script>
-            VANTA.BIRDS({
-            el: "#container",
-            backgroundColor: 0x1a2b41,
-            color1: 0xc32121,
-            color2: 0x31616b,
-            colorMode: "lerpGradient",
-            speedLimit: 3.00,
-            separation: 93.00,
-            alignment: 100.00,
-            backgroundAlpha: 0.00
-            })
-        </script>
+            
             <div class="options">
                 <a href="#/coding" ng-class="shared.buttonActive('coding')" class="button coding">
                     <span class="big-option">Coding</span>
