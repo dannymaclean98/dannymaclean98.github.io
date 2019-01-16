@@ -22,21 +22,24 @@
     <script src="app/components/coding/codingController.js"></script>
     <script src="app/components/experience/experienceController.js"></script>
     <script src="app/components/blog/blogController.js"></script>
-    <script src="assets/vanta/vendor/p5.min.js"></script>
-    <script src="assets/vanta/dist/vanta.topology.min.js"></script>
-    <script>
-        VANTA.TOPOLOGY({
-        el: "#object.style.background",
-        color: 0x343c10,
-        backgroundColor: 0x207575
-        })
-    </script>
-
 </head>
 <body ng-app="app">
 
-    <div class="app-container" ng-class="shared.fullHeightAt(['/home'])" ng-controller="appController">
-
+    <div class="app-container" ng-class="shared.fullHeightAt(['/home'])" ng-controller="appController" id="container">
+        <script src="three.r92.min.js"></script>
+        <script src="vanta.birds.min.js"></script>
+        <script>
+            VANTA.BIRDS({
+            el: "#container",
+            backgroundColor: 0x1a2b41,
+            color1: 0xc32121,
+            color2: 0x31616b,
+            colorMode: "lerpGradient",
+            speedLimit: 3.00,
+            separation: 93.00,
+            alignment: 100.00
+            })
+        </script>
         <nav ng-hide="shared.isHome()">
             <a href="#/home">
                 <h3 class="logo">Danny Maclean</h3>
